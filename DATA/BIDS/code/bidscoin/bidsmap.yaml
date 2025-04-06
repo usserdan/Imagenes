@@ -1,0 +1,410 @@
+$schema: schema.json
+Options:
+  bidscoin:
+    version: 4.6.1
+    subprefix: sub-
+    sesprefix: ses-
+    bidsignore:
+    - extra_data/
+    - sub-*_ct.*
+    unknowntypes:
+    - extra_data
+    ignoretypes:
+    - exclude
+    anon: y
+    unzip: null
+  plugins:
+    dcm2niix2bids:
+      command: dcm2niix
+      args: -b y -z y -i n -l n
+      meta:
+      - .json
+      - .tsv
+      - .tsv.gz
+      fallback: y
+    events2bids:
+      extraInfo: 7
+      meta:
+      - .json
+DICOM:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+    age:
+      value: <<PatientAge>>
+      meta:
+        Description: Age of the participant
+        Units: year
+    sex:
+      value: <<PatientSex>>
+      meta:
+        Description: Sex of the participant
+        Levels:
+          M: male
+          F: female
+          O: other
+    height:
+      value: <<PatientSize>>
+      meta:
+        Description: Height of the participant
+        Units: meter
+    weight:
+      value: <<PatientWeight>>
+      meta:
+        Description: Weight of the participant
+        Units: kilogram
+  anat:
+  - provenance: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10/IMG0001.dcm
+    properties:
+      filepath: null
+      filename: null
+      filesize: null
+      nrfiles: null
+    attributes:
+      Modality: MR
+      ProtocolName: ''
+      SeriesDescription: sagital 3D Accelerated MPRAGE
+      ImageType: '[''ORIGINAL'', ''PRIMARY'', ''MPR'']'
+      SequenceName: ''
+      PulseSequenceName: ''
+      SequenceVariant: ''
+      ScanningSequence: ''
+      EchoPulseSequence: ''
+      MRAcquisitionType: ''
+      SliceThickness: '1'
+      FlipAngle: ''
+      EchoNumbers: ''
+      EchoTime: ''
+      EffectiveEchoTime: ''
+      RepetitionTime: ''
+      InPlanePhaseEncodingDirection: ''
+    bids:
+      task: null
+      acq: ''
+      ce: null
+      rec: null
+      run: <<>>
+      echo: null
+      part:
+      - ''
+      - mag
+      - phase
+      - real
+      - imag
+      - 0
+      chunk: null
+      suffix: T1w
+    meta: {}
+    events: {}
+  - provenance: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+    properties:
+      filepath: ''
+      filename: ''
+      filesize: ''
+      nrfiles: null
+    attributes:
+      Modality: MR
+      ProtocolName: ''
+      SeriesDescription: Sagittal _3D FLAIR
+      ImageType: '[''ORIGINAL'', ''PRIMARY'', ''MPR'']'
+      SequenceName: ''
+      PulseSequenceName: ''
+      SequenceVariant: ''
+      ScanningSequence: ''
+      EchoPulseSequence: ''
+      MRAcquisitionType: ''
+      SliceThickness: '1'
+      FlipAngle: ''
+      EchoNumbers: ''
+      EchoTime: ''
+      EffectiveEchoTime: ''
+      RepetitionTime: ''
+      InPlanePhaseEncodingDirection: ''
+    bids:
+      task: null
+      acq: ''
+      ce: null
+      rec: null
+      run: <<>>
+      echo: null
+      part:
+      - ''
+      - mag
+      - phase
+      - real
+      - imag
+      - 0
+      chunk: null
+      suffix: FLAIR
+    meta: {}
+    events: {}
+  func: []
+  perf: []
+  dwi: []
+  fmap: []
+  pet: []
+  eeg: []
+  ieeg: []
+  extra_data:
+  - provenance: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_12/IMG0001.dcm
+    properties:
+      filepath: ''
+      filename: ''
+      filesize: ''
+      nrfiles: null
+    attributes:
+      Modality: MR
+      ProtocolName: ''
+      SeriesDescription: Axial SWI
+      ImageType: '[''ORIGINAL'', ''PRIMARY'', ''MPR'']'
+      SequenceName: ''
+      PulseSequenceName: ''
+      SequenceVariant: ''
+      ScanningSequence: ''
+      MRAcquisitionType: ''
+      SliceThickness: '1'
+      FlipAngle: ''
+      EchoNumbers: ''
+      EchoTime: ''
+      EffectiveEchoTime: ''
+      RepetitionTime: ''
+      PhaseEncodingDirection: ''
+    bids:
+      acq: ''
+      inv: null
+      rec: null
+      ce: null
+      task: null
+      echo: ''
+      dir: ''
+      run: <<>>
+      mod: Axial
+      part:
+      - ''
+      - mag
+      - phase
+      - real
+      - imag
+      - 0
+      chunk: null
+      suffix: SWI
+    meta: {}
+    events: {}
+  exclude:
+  - provenance: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_7/IMG0001.dcm
+    properties:
+      filepath: ''
+      filename: ''
+      filesize: ''
+      nrfiles: null
+    attributes:
+      Modality: MR
+      ProtocolName: ''
+      SeriesDescription: 3 Plane Localizer
+      ImageType: '[''ORIGINAL'', ''PRIMARY'', ''MPR'']'
+      SequenceName: ''
+      PulseSequenceName: ''
+      SequenceVariant: ''
+      ScanningSequence: ''
+      MRAcquisitionType: ''
+      SliceThickness: '20'
+      FlipAngle: ''
+      EchoNumbers: ''
+      EchoTime: ''
+      EffectiveEchoTime: ''
+      RepetitionTime: ''
+      InPlanePhaseEncodingDirection: ''
+    bids:
+      acq: ''
+      task: 3PlaneLocalizer
+      echo: ''
+      suffix: ''
+    meta: {}
+    events: {}
+Presentation:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+  beh: []
+  eeg: []
+  ieeg: []
+  meg: []
+  nirs: []
+  func: []
+  extra_data: []
+  exclude: []
+Psychopy:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+  beh: []
+  eeg: []
+  ieeg: []
+  meg: []
+  nirs: []
+  func: []
+  extra_data: []
+  exclude: []
+Logdata:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+  beh: []
+  eeg: []
+  ieeg: []
+  meg: []
+  nirs: []
+  func: []
+  extra_data: []
+  exclude: []
+PAR:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+  anat: []
+  func: []
+  perf: []
+  dwi: []
+  fmap: []
+  extra_data: []
+  exclude: []
+SPAR:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+  mrs: []
+  extra_data: []
+  exclude: []
+Twix:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+    age:
+      value: <<PatientAge>>
+      meta:
+        Description: Age of the participant
+        Units: year
+    sex:
+      value: <<PatientSex>>
+      meta:
+        Description: Sex of the participant
+        Levels:
+          M: male
+          F: female
+          O: other
+    height:
+      value: <<PatientSize>>
+      meta:
+        Description: Height of the participant
+        Units: meter
+    weight:
+      value: <<PatientWeight>>
+      meta:
+        Description: Weight of the participant
+        Units: kilogram
+  mrs: []
+  extra_data: []
+  exclude: []
+Pfile:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+    age:
+      value: <<rhr_rh_scan_date>>-<<rhe_dateofbirth>>
+      meta:
+        Description: Age of the participant
+        Units: year
+    sex:
+      value: <<rhe_patsex>>
+      meta:
+        Description: Sex of the participant
+        Levels:
+          M: male
+          F: female
+          O: other
+  mrs: []
+  extra_data: []
+  exclude: []
+Nibabel:
+  participant:
+    participant_id:
+      value: <<filepath:/raw/sub-(.*?)/>>
+      meta:
+        Description: The unique participant identifier of the form sub-<label>, matching
+          a participant entity found in the dataset
+    session_id:
+      value: <<filepath:/raw/sub-.*?/ses-(.*?)/>>
+      meta:
+        Description: The session identifier of the form ses-<label>, matching a session
+          found in the dataset
+  anat: []
+  func: []
+  perf: []
+  dwi: []
+  fmap: []
+  extra_data: []
+  exclude: []

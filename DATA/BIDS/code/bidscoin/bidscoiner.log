@@ -1,0 +1,97 @@
+2025-04-04 17:15:36 - INFO | 
+2025-04-04 17:15:36 - INFO | -------------- START BIDScoiner 4.6.1: BIDS 1.10.0 ------------
+2025-04-04 17:15:36 - INFO | >>> bidscoiner sourcefolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw bidsfolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS participant=['sub-MR0002'] force=False bidsmap=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:15:36 - INFO | Creating dataset description file: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/dataset_description.json
+2025-04-04 17:15:36 - INFO | Creating a template README file (adjust it to your needs): /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/README
+2025-04-04 17:15:36 - INFO | Reading: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:15:36 - INFO | Checking the bidsmap run-items:
+2025-04-04 17:15:36 - SUCCESS | All run-items in the bidsmap are valid
+2025-04-04 17:15:36 - VERBOSE | Writing ['extra_data/', 'sub-*_ct.*'] entries to /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/.bidsignore
+2025-04-04 17:15:36 - INFO | ------------------- Subject 1/1 -------------------
+2025-04-04 17:15:36 - INFO | >>> Coining dcm2niix2bids datasources in: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002
+2025-04-04 17:15:37 - INFO | --> Leaving out: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_21/IMG0001.dcm
+2025-04-04 17:15:37 - INFO | --> Coining: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_24/IMG0001.dcm
+2025-04-04 17:15:38 - VERBOSE | Command:
+dcm2niix -b y -z y -i n -l n -f "sub-MR0002_T1w" -o "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/anat" "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_24"
+2025-04-04 17:15:39 - VERBOSE | Output:
+Chris Rorden's dcm2niiX version v1.0.20241211  Clang18.1.8 ARM (64-bit MacOS)
+Found 200 DICOM file(s)
+Convert 200 DICOM as /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/anat/sub-MR0002_T1w (256x256x200x1)
+Conversion required 0.981511 seconds (0.915275 for core code).
+
+2025-04-04 17:15:39 - INFO | --> Coining: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_25/IMG0001.dcm
+2025-04-04 17:15:39 - VERBOSE | Command:
+dcm2niix -b y -z y -i n -l n -f "sub-MR0002_FLAIR" -o "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/anat" "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_25"
+2025-04-04 17:15:40 - VERBOSE | Output:
+Chris Rorden's dcm2niiX version v1.0.20241211  Clang18.1.8 ARM (64-bit MacOS)
+Found 179 DICOM file(s)
+Convert 179 DICOM as /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/anat/sub-MR0002_FLAIR (256x256x179x1)
+Conversion required 0.939502 seconds (0.883773 for core code).
+
+2025-04-04 17:15:40 - INFO | --> Coining: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_26/IMG0001.dcm
+2025-04-04 17:15:40 - VERBOSE | Command:
+dcm2niix -b y -z y -i n -l n -f "sub-MR0002_mod-Axial_SWI" -o "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/extra_data" "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002/ScalarVolume_26"
+2025-04-04 17:15:43 - VERBOSE | Output:
+Chris Rorden's dcm2niiX version v1.0.20241211  Clang18.1.8 ARM (64-bit MacOS)
+Found 146 DICOM file(s)
+Convert 146 DICOM as /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/extra_data/sub-MR0002_mod-Axial_SWI (432x432x146x1)
+Conversion required 3.504492 seconds (3.449729 for core code).
+
+2025-04-04 17:15:43 - VERBOSE | Writing acquisition time data to: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0002/sub-MR0002_scans.tsv
+2025-04-04 17:15:43 - VERBOSE | Writing sub-MR0002 subject data to: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/participants.tsv
+2025-04-04 17:15:43 - INFO | >>> No events2bids datasources found in '/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002'
+2025-04-04 17:15:43 - INFO | -------------- FINISHED! ------------
+2025-04-04 17:15:43 - INFO | 
+2025-04-04 17:15:43 - SUCCESS | No BIDScoin errors or warnings were reported
+2025-04-04 17:15:43 - INFO | 
+2025-04-04 17:15:43 - INFO | For the complete log see: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidscoiner.log
+NB: That folder may contain privacy sensitive information, e.g. pathnames in logfiles and provenance data samples
+2025-04-04 17:26:52 - INFO | 
+2025-04-04 17:26:52 - INFO | -------------- START BIDScoiner 4.6.1: BIDS 1.10.0 ------------
+2025-04-04 17:26:52 - INFO | >>> bidscoiner sourcefolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw bidsfolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS participant=['sub-MR0001'] force=False bidsmap=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:26:52 - INFO | Reading: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:26:53 - INFO | Checking the bidsmap run-items:
+2025-04-04 17:26:53 - SUCCESS | All run-items in the bidsmap are valid
+2025-04-04 17:26:53 - VERBOSE | Writing ['extra_data/', 'sub-*_ct.*'] entries to /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/.bidsignore
+2025-04-04 17:26:53 - INFO | ------------------- Subject 1/1 -------------------
+2025-04-04 17:26:53 - VERBOSE | Ignoring hidden file/folder: .DS_Store
+2025-04-04 17:26:53 - INFO | >>> Coining dcm2niix2bids datasources in: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001
+2025-04-04 17:26:53 - VERBOSE | Ignoring hidden file/folder: .DS_Store
+2025-04-04 17:26:53 - INFO | --> Coining: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10/IMG0001.dcm
+2025-04-04 17:26:53 - VERBOSE | Command:
+dcm2niix -b y -z y -i n -l n -f "sub-MR0001_T1w" -o "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/anat" "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10"
+2025-04-04 17:26:54 - VERBOSE | Output:
+Chris Rorden's dcm2niiX version v1.0.20241211  Clang18.1.8 ARM (64-bit MacOS)
+Found 200 DICOM file(s)
+Convert 200 DICOM as /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/anat/sub-MR0001_T1w (256x256x200x1)
+Conversion required 0.888233 seconds (0.825679 for core code).
+
+2025-04-04 17:26:54 - INFO | --> Coining: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+2025-04-04 17:26:54 - VERBOSE | Command:
+dcm2niix -b y -z y -i n -l n -f "sub-MR0001_FLAIR" -o "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/anat" "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11"
+2025-04-04 17:26:55 - VERBOSE | Output:
+Chris Rorden's dcm2niiX version v1.0.20241211  Clang18.1.8 ARM (64-bit MacOS)
+Found 179 DICOM file(s)
+Convert 179 DICOM as /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/anat/sub-MR0001_FLAIR (256x256x179x1)
+Conversion required 0.936599 seconds (0.878007 for core code).
+
+2025-04-04 17:26:55 - INFO | --> Coining: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_12/IMG0001.dcm
+2025-04-04 17:26:55 - VERBOSE | Command:
+dcm2niix -b y -z y -i n -l n -f "sub-MR0001_mod-Axial_SWI" -o "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/extra_data" "/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_12"
+2025-04-04 17:26:58 - VERBOSE | Output:
+Chris Rorden's dcm2niiX version v1.0.20241211  Clang18.1.8 ARM (64-bit MacOS)
+Found 140 DICOM file(s)
+Convert 140 DICOM as /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/extra_data/sub-MR0001_mod-Axial_SWI (432x432x140x1)
+Conversion required 3.098110 seconds (3.039672 for core code).
+
+2025-04-04 17:26:58 - INFO | --> Leaving out: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_7/IMG0001.dcm
+2025-04-04 17:26:58 - VERBOSE | Writing acquisition time data to: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/sub-MR0001/sub-MR0001_scans.tsv
+2025-04-04 17:26:58 - VERBOSE | Writing sub-MR0001 subject data to: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/participants.tsv
+2025-04-04 17:26:58 - VERBOSE | Ignoring hidden file/folder: .DS_Store
+2025-04-04 17:26:58 - INFO | >>> No events2bids datasources found in '/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001'
+2025-04-04 17:26:58 - INFO | -------------- FINISHED! ------------
+2025-04-04 17:26:58 - INFO | 
+2025-04-04 17:26:58 - SUCCESS | No BIDScoin errors or warnings were reported
+2025-04-04 17:26:58 - INFO | 
+2025-04-04 17:26:58 - INFO | For the complete log see: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidscoiner.log
+NB: That folder may contain privacy sensitive information, e.g. pathnames in logfiles and provenance data samples

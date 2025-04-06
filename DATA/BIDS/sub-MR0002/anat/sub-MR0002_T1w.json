@@ -1,0 +1,28 @@
+{
+    "Modality": "MR",
+    "Manufacturer": "Philips",
+    "ManufacturersModelName": "Ingenia Elition X",
+    "PatientPosition": "HFS",
+    "StudyDescription": "Cerebro simple",
+    "SeriesDescription": "sagital 3D Accelerated MPRAGE",
+    "ProtocolName": "sagital 3D Accelerated MPRAGE",
+    "ImageType": [
+        "ORIGINAL",
+        "PRIMARY",
+        "MPR"
+    ],
+    "SeriesNumber": 201,
+    "SliceThickness": 1,
+    "SpacingBetweenSlices": 1,
+    "ReconMatrixPE": 256,
+    "ImageOrientationPatientDICOM": [
+        0.0506407,
+        0.998637,
+        0.0126646,
+        -0.000624358,
+        0.0127125,
+        -0.999919
+    ],
+    "ConversionSoftware": "dcm2niix",
+    "ConversionSoftwareVersion": "v1.0.20241211"
+}

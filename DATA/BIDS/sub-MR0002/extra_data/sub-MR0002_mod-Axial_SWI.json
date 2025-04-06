@@ -1,0 +1,28 @@
+{
+    "Modality": "MR",
+    "Manufacturer": "Philips",
+    "ManufacturersModelName": "Ingenia Elition X",
+    "PatientPosition": "HFS",
+    "StudyDescription": "Cerebro simple",
+    "SeriesDescription": "Axial SWI",
+    "ProtocolName": "Axial SWI",
+    "ImageType": [
+        "ORIGINAL",
+        "PRIMARY",
+        "MPR"
+    ],
+    "SeriesNumber": 801,
+    "SliceThickness": 1,
+    "SpacingBetweenSlices": 1,
+    "ReconMatrixPE": 432,
+    "ImageOrientationPatientDICOM": [
+        0.998163,
+        -0.0506287,
+        0.0332894,
+        0.0501722,
+        0.998637,
+        0.0144092
+    ],
+    "ConversionSoftware": "dcm2niix",
+    "ConversionSoftwareVersion": "v1.0.20241211"
+}

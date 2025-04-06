@@ -1,0 +1,73 @@
+2025-04-04 16:46:07 - INFO | 
+2025-04-04 16:46:07 - INFO | -------------- START BIDSmapper ------------
+2025-04-04 16:46:07 - INFO | >>> bidsmapper sourcefolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw bidsfolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS bidsmap=bidsmap.yaml template=/Users/usserdan/.bidscoin/4.6.1/templates/bidsmap_dccn.yaml plugins=[] subprefix=None sesprefix=None store=False force=False
+2025-04-04 16:46:07 - INFO | No bidsmap file found: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 16:46:07 - INFO | Reading: /Users/usserdan/.bidscoin/4.6.1/templates/bidsmap_dccn.yaml
+2025-04-04 16:46:08 - INFO | Checking the bidsmap run-items:
+2025-04-04 16:46:08 - VERBOSE | Could not validate every run-item in the bidsmap
+2025-04-04 16:46:08 - VERBOSE | Checking the template bidsmap datatypes:
+2025-04-04 16:46:09 - SUCCESS | All datatypes and options in the template bidsmap are valid
+2025-04-04 16:46:09 - INFO | Mapping: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001 (subject 1/2)
+2025-04-04 16:46:09 - VERBOSE | Executing plugin: dcm2niix2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001
+2025-04-04 16:46:09 - INFO | Discovered sample: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10/IMG0001.dcm
+2025-04-04 16:46:09 - INFO | Discovered sample: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+2025-04-04 16:46:09 - INFO | Discovered sample: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_12/IMG0001.dcm
+2025-04-04 16:46:09 - INFO | Discovered sample: [DICOM] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_7/IMG0001.dcm
+2025-04-04 16:46:09 - VERBOSE | Executing plugin: events2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001
+2025-04-04 16:46:09 - INFO | Mapping: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002 (subject 2/2)
+2025-04-04 16:46:09 - VERBOSE | Executing plugin: dcm2niix2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002
+2025-04-04 16:46:09 - VERBOSE | Executing plugin: events2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002
+2025-04-04 16:46:09 - INFO | Opening the bidseditor
+2025-04-04 17:02:14 - VERBOSE | User is editing /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10/IMG0001.dcm
+2025-04-04 17:03:32 - VERBOSE | User changes the BIDS data type from 'extra_data' to 'anat' for [DICOM/anat] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10/IMG0001.dcm
+2025-04-04 17:03:44 - VERBOSE | User sets bids['acq'] from 'sagital3DAcceleratedMPRAGE' to '' for [DICOM/anat] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_10/IMG0001.dcm
+2025-04-04 17:04:14 - VERBOSE | User approves the edit
+2025-04-04 17:04:17 - VERBOSE | User is editing /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+2025-04-04 17:04:26 - VERBOSE | User changes the BIDS data type from 'extra_data' to 'anat' for [DICOM/anat] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+2025-04-04 17:04:33 - VERBOSE | User changes the BIDS suffix from 'T1w' to 'FLAIR' for [DICOM/anat] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+2025-04-04 17:04:42 - VERBOSE | User sets bids['acq'] from 'Sagittal3DFLAIR' to '' for [DICOM/anat] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_11/IMG0001.dcm
+2025-04-04 17:05:27 - VERBOSE | User approves the edit
+2025-04-04 17:05:29 - VERBOSE | User is editing /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_12/IMG0001.dcm
+2025-04-04 17:06:08 - VERBOSE | User sets bids['suffix'] from '' to 'SWI' for [DICOM/extra_data] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_12/IMG0001.dcm
+2025-04-04 17:06:42 - VERBOSE | User approves the edit
+2025-04-04 17:06:49 - VERBOSE | User is editing /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_7/IMG0001.dcm
+2025-04-04 17:06:51 - VERBOSE | User changes the BIDS data type from 'extra_data' to 'exclude' for [DICOM/exclude] /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001/ScalarVolume_7/IMG0001.dcm
+2025-04-04 17:07:01 - VERBOSE | User approves the edit
+2025-04-04 17:09:04 - INFO | Checking the bidsmap run-items:
+2025-04-04 17:09:04 - SUCCESS | All run-items in the bidsmap are valid
+2025-04-04 17:09:04 - INFO | Saving bidsmap in: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:12:58 - INFO | -------------- FINISHED! -------------------
+2025-04-04 17:12:58 - INFO | 
+2025-04-04 17:12:58 - SUCCESS | No BIDScoin errors or warnings were reported
+2025-04-04 17:12:58 - INFO | 
+2025-04-04 17:12:58 - INFO | For the complete log see: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmapper.log
+NB: That folder may contain privacy sensitive information, e.g. pathnames in logfiles and provenance data samples
+2025-04-04 17:24:42 - INFO | 
+2025-04-04 17:24:42 - INFO | -------------- START BIDSmapper ------------
+2025-04-04 17:24:42 - INFO | >>> bidsmapper sourcefolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw bidsfolder=/Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS bidsmap=bidsmap.yaml template=/Users/usserdan/.bidscoin/4.6.1/templates/bidsmap_dccn.yaml plugins=[] subprefix=None sesprefix=None store=False force=False
+2025-04-04 17:24:42 - INFO | Reading: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:24:42 - INFO | Checking the bidsmap run-items:
+2025-04-04 17:24:42 - SUCCESS | All run-items in the bidsmap are valid
+2025-04-04 17:24:42 - INFO | Reading: /Users/usserdan/.bidscoin/4.6.1/templates/bidsmap_dccn.yaml
+2025-04-04 17:24:42 - INFO | Checking the bidsmap run-items:
+2025-04-04 17:24:43 - VERBOSE | Could not validate every run-item in the bidsmap
+2025-04-04 17:24:43 - VERBOSE | Checking the template bidsmap datatypes:
+2025-04-04 17:24:43 - SUCCESS | All datatypes and options in the template bidsmap are valid
+2025-04-04 17:24:43 - INFO | Mapping: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001 (subject 1/2)
+2025-04-04 17:24:43 - VERBOSE | Executing plugin: dcm2niix2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001
+2025-04-04 17:24:43 - VERBOSE | Ignoring hidden file/folder: .DS_Store
+2025-04-04 17:24:43 - VERBOSE | Executing plugin: events2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0001
+2025-04-04 17:24:43 - VERBOSE | Ignoring hidden file/folder: .DS_Store
+2025-04-04 17:24:43 - INFO | Mapping: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002 (subject 2/2)
+2025-04-04 17:24:43 - VERBOSE | Executing plugin: dcm2niix2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002
+2025-04-04 17:24:43 - VERBOSE | Executing plugin: events2bids -> /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/raw/sub-MR0002
+2025-04-04 17:24:43 - INFO | Opening the bidseditor
+2025-04-04 17:26:03 - INFO | Checking the bidsmap run-items:
+2025-04-04 17:26:03 - SUCCESS | All run-items in the bidsmap are valid
+2025-04-04 17:26:03 - INFO | Saving bidsmap in: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmap.yaml
+2025-04-04 17:26:08 - INFO | -------------- FINISHED! -------------------
+2025-04-04 17:26:08 - INFO | 
+2025-04-04 17:26:08 - SUCCESS | No BIDScoin errors or warnings were reported
+2025-04-04 17:26:08 - INFO | 
+2025-04-04 17:26:08 - INFO | For the complete log see: /Users/usserdan/Library/CloudStorage/OneDrive-UniversidaddeAntioquia/2025-1/Imagenes/DATA/BIDS/code/bidscoin/bidsmapper.log
+NB: That folder may contain privacy sensitive information, e.g. pathnames in logfiles and provenance data samples
